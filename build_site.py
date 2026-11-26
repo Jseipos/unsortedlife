@@ -129,6 +129,7 @@ h3{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-style:ital
 .tile{{aspect-ratio:4/3;background:linear-gradient(135deg,var(--bg2),var(--card));border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:14px;text-align:center}}
 .tile span{{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:22px;color:var(--accent);line-height:1.2}}
 .listbtn{{margin:0 0 14px}}
+.cover{{width:100%;max-width:520px;display:block;margin:0 auto 14px;border-radius:18px;box-shadow:var(--shadow)}}
 .btn.alt{{background:var(--accent-2);box-shadow:0 3px 10px rgba(159,180,154,.35)}}
 .group .body{{gap:10px}}
 .row{{display:flex;flex-direction:column;gap:4px}}
@@ -171,6 +172,10 @@ for sec in data["sections"]:
   parts.append(f'<section id="{sec["slug"]}"><h2>{html.escape(sec["title"])}</h2><p class="sec-intro">{html.escape(sec["intro"])}</p>')
   for lst in sec["lists"]:
     parts.append(f'<div class="list" id="{lst["slug"]}"><h3>{html.escape(lst["title"])}</h3>' + (f'<p class="intro">{html.escape(lst["intro"])}</p>' if lst.get("intro") else ""))
+    if lst.get("cover"):
+        cov = ensure_photo({"photo": lst["cover"], "match": []})
+        if cov:
+            parts.append(f'<img class="cover" src="{cov}" alt="{html.escape(lst["title"])}, illustrated gift guide" loading="lazy">')
     if lst.get("amazon_list"):
         parts.append(f'<p class="listbtn"><a class="btn alt" href="{html.escape(lst["amazon_list"])}" rel="nofollow sponsored noopener" target="_blank">See the whole list on Amazon, with photos #ad</a></p>')
     if not lst["items"]:

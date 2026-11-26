@@ -1049,7 +1049,8 @@
      ],
      "wishlist": true,
      "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3NRAT6JHGF96U?tag=unsortedlife-20",
-     "limit": 6
+     "limit": 6,
+     "cover": "ayla gift guide_a.png"
     },
     {
      "slug": "has-everything",
@@ -1217,7 +1218,8 @@
        ]
       }
      ],
-     "limit": 6
+     "limit": 6,
+     "cover": "mom gift guide_a.png"
     }
    ]
   }
