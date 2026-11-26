@@ -400,38 +400,16 @@
        "short": "Dual action wipes"
       },
       {
-       "name": "Stanley 3 gallon wet dry shop vac",
-       "note": "Small enough to live in a closet, strong enough for the vents and the car.",
-       "url": "https://link.amazon/B0432PuyT",
-       "photo": "",
-       "match": [
-        "shop vac",
-        "stanley",
-        "shopvac"
-       ],
-       "short": "Shop vac"
-      },
-      {
        "name": "Mold gel for grout and caulk",
        "note": "Honest one: works on grout if you leave it until it dries. Did nothing for my stained silicone caulk.",
        "url": "https://link.amazon/B0fWrqf5P",
        "photo": "Mold gel after.HEIC",
        "match": [
         "mold gel",
-        "moldgel"
+        "moldgel",
+        "mold stain"
        ],
        "short": "Mold gel"
-      },
-      {
-       "name": "Pet and kid safe weed killer",
-       "note": "Works great. Too great: one or two leaves of overspray turned a baby flower bush half brown. Aim carefully.",
-       "url": "https://link.amazon/B02RCnWTB",
-       "photo": "Weed killer.HEIC",
-       "match": [
-        "weed killer",
-        "weedkiller"
-       ],
-       "short": "Weed killer"
       },
       {
        "name": "Clorox disinfecting wipes",
@@ -680,6 +658,58 @@
         "napqueen"
        ],
        "short": "Mattress"
+      }
+     ]
+    },
+    {
+     "slug": "garage-yard",
+     "title": "Garage and yard",
+     "intro": "Florida yard, one adult, no landscaper.",
+     "items": [
+      {
+       "name": "Ryobi 1800 PSI electric pressure washer",
+       "short": "Pressure washer",
+       "note": "Mine is the 1600 PSI version; they only sell the 1800 now, which is fine. Actually shocked at how well it works for a plug-in one.",
+       "url": "https://www.amazon.com/dp/B0C5JX9MMY?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "pressure washer",
+        "ryobi"
+       ]
+      },
+      {
+       "name": "Sun Joe corded electric leaf blower",
+       "short": "Leaf blower",
+       "note": "Corded, light, and it just works. The other thing from the garage I did not expect to be this good.",
+       "url": "https://www.amazon.com/dp/B076CSDNXK?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "leaf blower",
+        "sun joe"
+       ]
+      },
+      {
+       "name": "Stanley 3 gallon wet dry shop vac",
+       "note": "Small enough to live in a closet, strong enough for the vents and the car.",
+       "url": "https://link.amazon/B0432PuyT",
+       "photo": "",
+       "match": [
+        "shop vac",
+        "stanley",
+        "shopvac"
+       ],
+       "short": "Shop vac"
+      },
+      {
+       "name": "Pet and kid safe weed killer",
+       "note": "Works great. Too great: one or two leaves of overspray turned a baby flower bush half brown. Aim carefully.",
+       "url": "https://link.amazon/B02RCnWTB",
+       "photo": "Weed killer.HEIC",
+       "match": [
+        "weed killer",
+        "weedkiller"
+       ],
+       "short": "Weed killer"
       }
      ]
     }
