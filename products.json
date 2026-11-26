@@ -491,7 +491,7 @@
     {
      "slug": "bathroom",
      "title": "Bathroom storage",
-     "intro": "Fixed shelves, no drawers, one 6 year old.",
+     "intro": "Fixed shelves, no drawers, one 7 year old.",
      "items": [
       {
        "name": "Ageminglife wicker baskets with liners, 3 pack",
@@ -624,13 +624,13 @@
     {
      "slug": "kid-room",
      "title": "Kid room reality",
-     "intro": "Cleanup is throwing, and a 6 year old will throw.",
+     "intro": "Cleanup is throwing, and a 7 year old will throw.",
      "items": [
       {
        "name": "HOOBRO 3-bin toy storage cubby",
        "note": "The top ten stuffed animals live here. I screwed a bookshelf to the top of it.",
        "url": "https://www.amazon.com/dp/B0CCJJM35K?tag=unsortedlife-20",
-       "photo": "Bookshelf bin combo.jpg",
+       "photo": "Bookshelf bin combo portrait.jpg",
        "match": [
         "cubby",
         "toy bin",
@@ -642,7 +642,7 @@
        "name": "Giantex 6-cube bookcase",
        "note": "The bookshelf on top of the bin. Comes with an anti-tip kit; use it.",
        "url": "https://www.amazon.com/dp/B0DT6F4B9W?tag=unsortedlife-20",
-       "photo": "Bookshelf bin combo.jpg",
+       "photo": "Bookshelf bin combo portrait.jpg",
        "match": [
         "bookshelf",
         "bookcase",

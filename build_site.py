@@ -136,6 +136,10 @@ h3{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-style:ital
 .card.group img{{width:100%;aspect-ratio:auto;height:auto;max-height:520px;object-fit:cover}}
 .card.group .body{{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}}
 .card.group .row{{padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}}
+.card.group.portrait{{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr)}}
+.card.group.portrait img{{height:auto;max-height:none;object-fit:unset;align-self:stretch}}
+.card.group.portrait .body{{grid-template-columns:1fr;align-content:center}}
+@media (max-width:600px){{.card.group.portrait{{grid-template-columns:1fr}}.card.group.portrait img{{max-height:none}}}}
 .empty{{border:1.5px dashed var(--line);border-radius:18px;padding:16px;color:var(--muted);font-size:14px;text-align:center;background:var(--card)}}
 footer{{max-width:720px;margin:0 auto;padding:0 16px 40px;font-size:12px;color:var(--muted);text-align:center}}
 </style>
@@ -198,7 +202,15 @@ for sec in data["sections"]:
                     f'<div class="row" id="{slug(i.get("short") or i["name"])}"><div class="name">{html.escape(i["name"])}</div><div class="note">{html.escape(i["note"])}</div>'
                     f'<a class="btn" href="{html.escape(i["url"])}" rel="nofollow sponsored noopener" target="_blank">{html.escape(i.get("short") or i["name"])} on Amazon #ad</a></div>'
                     for i in items)
-                parts.append(f'<article class="card group"><img src="{photo}" alt="{html.escape(alt)}, my own photo" loading="lazy"><div class="body">{rows}</div></article>')
+                cls = "card group"
+                try:
+                    from PIL import Image as _I
+                    _w, _h = _I.open(os.path.join(site_dir, photo)).size
+                    if _h > _w * 1.1:
+                        cls += " portrait"   # tall photo: image left, product rows stacked on the right
+                except Exception:
+                    pass
+                parts.append(f'<article class="{cls}"><img src="{photo}" alt="{html.escape(alt)}, my own photo" loading="lazy"><div class="body">{rows}</div></article>')
         parts.append('</div>')
     parts.append('</div>')
   parts.append('</section>')
