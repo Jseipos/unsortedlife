@@ -179,9 +179,13 @@ for sec in data["sections"]:
         parts.append('<div class="grid">')
         # group adjacent items that share one photo (a collage) into a single card with one CTA per product
         groups = []
+        shown = 0
         for it in lst["items"]:
             if not it.get("url"):
                 continue   # pending: photo in, link not yet; stays off the page until the url is filled
+            if lst.get("limit") and shown >= lst["limit"]:
+                break      # wish lists show only the first N cards; the rest stay in products.json and on the Amazon list
+            shown += 1
             photo = ensure_photo(it)
             if groups and photo and groups[-1][0] == photo:
                 groups[-1][1].append(it)

@@ -747,7 +747,8 @@
       }
      ],
      "wishlist": true,
-     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/2LGSMI851HUT2?tag=unsortedlife-20"
+     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/2LGSMI851HUT2?tag=unsortedlife-20",
+     "limit": 6
     },
     {
      "slug": "her-list",
@@ -782,6 +783,36 @@
        "photo": "",
        "match": [
         "unicorn robe"
+       ]
+      },
+      {
+       "name": "Squishy making kit",
+       "short": "Squishy making kit",
+       "note": "So she can make her own instead of asking me for more.",
+       "url": "https://www.amazon.com/dp/B0GZWZH2L8?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "squishy making kit"
+       ]
+      },
+      {
+       "name": "Kids pottery wheel",
+       "short": "Pottery wheel",
+       "note": "Messy craft, but the kind that keeps her busy for an hour.",
+       "url": "https://www.amazon.com/dp/B0D5R6WWPZ?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "pottery wheel"
+       ]
+      },
+      {
+       "name": "Tovla Jr. kid-safe knife set",
+       "short": "Kid-safe knives",
+       "note": "She wants to help cook. These let her without me hovering.",
+       "url": "https://www.amazon.com/dp/B0751JFFYY?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "kid-safe knives"
        ]
       },
       {
@@ -822,26 +853,6 @@
        "photo": "",
        "match": [
         "silicone squishies"
-       ]
-      },
-      {
-       "name": "Squishy making kit",
-       "short": "Squishy making kit",
-       "note": "So she can make her own instead of asking me for more.",
-       "url": "https://www.amazon.com/dp/B0GZWZH2L8?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "squishy making kit"
-       ]
-      },
-      {
-       "name": "Kids pottery wheel",
-       "short": "Pottery wheel",
-       "note": "Messy craft, but the kind that keeps her busy for an hour.",
-       "url": "https://www.amazon.com/dp/B0D5R6WWPZ?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "pottery wheel"
        ]
       },
       {
@@ -892,16 +903,6 @@
        "photo": "",
        "match": [
         "sentence search"
-       ]
-      },
-      {
-       "name": "Tovla Jr. kid-safe knife set",
-       "short": "Kid-safe knives",
-       "note": "She wants to help cook. These let her without me hovering.",
-       "url": "https://www.amazon.com/dp/B0751JFFYY?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "kid-safe knives"
        ]
       },
       {
@@ -1016,14 +1017,16 @@
       }
      ],
      "wishlist": true,
-     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3NRAT6JHGF96U?tag=unsortedlife-20"
+     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3NRAT6JHGF96U?tag=unsortedlife-20",
+     "limit": 6
     },
     {
      "slug": "has-everything",
      "title": "For the person who has everything",
      "intro": "",
      "items": [],
-     "wishlist": true
+     "wishlist": true,
+     "limit": 6
     },
     {
      "slug": "mom-list",
@@ -1043,16 +1046,6 @@
        ]
       },
       {
-       "name": "Kendra Scott Elton cuff bracelet",
-       "short": "Kendra Scott cuff",
-       "note": "Goes with the earrings or on its own. Comes in the box she will keep.",
-       "url": "https://www.amazon.com/dp/B0H8FK9FNP?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "kendra scott cuff"
-       ]
-      },
-      {
        "name": "Salt & Stone body mist discovery set",
        "short": "Salt & Stone mists",
        "note": "Four minis so she picks the scent, not you.",
@@ -1060,6 +1053,56 @@
        "photo": "",
        "match": [
         "salt & stone mists"
+       ]
+      },
+      {
+       "name": "Oura Ring 5",
+       "short": "Oura ring",
+       "note": "The big one. For the mom who tracks everyone's sleep but her own.",
+       "url": "https://www.amazon.com/dp/B0GRKGWF3Y?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "oura ring"
+       ]
+      },
+      {
+       "name": "Boll & Branch organic waffle robe",
+       "short": "Waffle robe",
+       "note": "The nice robe she will never buy herself. That is the whole point.",
+       "url": "https://www.amazon.com/dp/B0H5T4D2M7?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "waffle robe"
+       ]
+      },
+      {
+       "name": "Heated faux fur throw",
+       "short": "Heated throw",
+       "note": "Couch, book, heated blanket. She will disappear for an hour.",
+       "url": "https://www.amazon.com/dp/B0H4145QZ6?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "heated throw"
+       ]
+      },
+      {
+       "name": "Mom's Story memory and keepsake journal",
+       "short": "Mom's Story journal",
+       "note": "Prompts she answers, a book her kids keep. Costs less than flowers.",
+       "url": "https://www.amazon.com/dp/1950968871?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "mom's story journal"
+       ]
+      },
+      {
+       "name": "Kendra Scott Elton cuff bracelet",
+       "short": "Kendra Scott cuff",
+       "note": "Goes with the earrings or on its own. Comes in the box she will keep.",
+       "url": "https://www.amazon.com/dp/B0H8FK9FNP?tag=unsortedlife-20",
+       "photo": "",
+       "match": [
+        "kendra scott cuff"
        ]
       },
       {
@@ -1083,16 +1126,6 @@
        ]
       },
       {
-       "name": "Oura Ring 5",
-       "short": "Oura ring",
-       "note": "The big one. For the mom who tracks everyone's sleep but her own.",
-       "url": "https://www.amazon.com/dp/B0GRKGWF3Y?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "oura ring"
-       ]
-      },
-      {
        "name": "Hatch Restore 3 sunrise alarm",
        "short": "Hatch Restore",
        "note": "A gentler wake-up than a phone on the nightstand.",
@@ -1103,16 +1136,6 @@
        ]
       },
       {
-       "name": "Boll & Branch organic waffle robe",
-       "short": "Waffle robe",
-       "note": "The nice robe she will never buy herself. That is the whole point.",
-       "url": "https://www.amazon.com/dp/B0H5T4D2M7?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "waffle robe"
-       ]
-      },
-      {
        "name": "Fluffy plush hooded robe",
        "short": "Hooded robe",
        "note": "The cozy version, for the mom who runs cold.",
@@ -1120,16 +1143,6 @@
        "photo": "",
        "match": [
         "hooded robe"
-       ]
-      },
-      {
-       "name": "Heated faux fur throw",
-       "short": "Heated throw",
-       "note": "Couch, book, heated blanket. She will disappear for an hour.",
-       "url": "https://www.amazon.com/dp/B0H4145QZ6?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "heated throw"
        ]
       },
       {
@@ -1163,16 +1176,6 @@
        ]
       },
       {
-       "name": "Mom's Story memory and keepsake journal",
-       "short": "Mom's Story journal",
-       "note": "Prompts she answers, a book her kids keep. Costs less than flowers.",
-       "url": "https://www.amazon.com/dp/1950968871?tag=unsortedlife-20",
-       "photo": "",
-       "match": [
-        "mom's story journal"
-       ]
-      },
-      {
        "name": "harriet stovetop tea kettle",
        "short": "Tea kettle",
        "note": "Pretty enough to live on the stove. For the tea mom.",
@@ -1182,7 +1185,8 @@
         "tea kettle"
        ]
       }
-     ]
+     ],
+     "limit": 6
     }
    ]
   }
