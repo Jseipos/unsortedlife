@@ -16,6 +16,10 @@ import json, os, re, sys, html
 site_dir = sys.argv[1]
 inbox = sys.argv[2] if len(sys.argv) > 2 else None
 data = json.load(open(os.path.join(site_dir, "products.json")))
+# optional seasonal lead: site.lead_section (a section slug) goes first in the tabs and above "Start here"
+_lead = data["site"].get("lead_section")
+if _lead:
+    data["sections"].sort(key=lambda sec: 0 if sec["slug"] == _lead else 1)
 img_dir = os.path.join(site_dir, "img")
 os.makedirs(img_dir, exist_ok=True)
 
@@ -156,19 +160,20 @@ footer{{max-width:720px;margin:0 auto;padding:0 16px 40px;font-size:12px;color:v
 <main>
 """)
 
+start_parts = []
 featured = sorted([it for sec in data["sections"] for lst in sec["lists"] for it in lst["items"] if it.get("featured") and it.get("url")], key=lambda i: i["featured"])
 if featured:
-    parts.append(f'<section id="start-here" class="start"><h2>{html.escape(s.get("start_here","Start here"))}</h2><p class="sec-intro">{html.escape(s.get("start_here_intro",""))}</p><div class="grid start-grid">')
+    start_parts.append(f'<section id="start-here" class="start"><h2>{html.escape(s.get("start_here","Start here"))}</h2><p class="sec-intro">{html.escape(s.get("start_here_intro",""))}</p><div class="grid start-grid">')
     for it in featured:
         photo = ensure_photo(it)
         img = f'<img src="{photo}" alt="{html.escape(it["name"])}, my own photo" loading="lazy">' if photo else ""
-        parts.append(
+        start_parts.append(
             f'<article class="card">{img}<div class="body"><div class="name">{html.escape(it["name"])}</div>'
             f'<div class="note">{html.escape(it["note"])}</div>'
             f'<a class="btn" href="{html.escape(it["url"])}" rel="nofollow sponsored noopener" target="_blank">{html.escape(it.get("short") or it["name"])} on Amazon #ad</a></div></article>')
-    parts.append('</div></section>')
+    start_parts.append('</div></section>')
 
-for sec in data["sections"]:
+def render_section(sec):
   parts.append(f'<section id="{sec["slug"]}"><h2>{html.escape(sec["title"])}</h2><p class="sec-intro">{html.escape(sec["intro"])}</p>')
   for lst in sec["lists"]:
     parts.append(f'<div class="list" id="{lst["slug"]}"><h3>{html.escape(lst["title"])}</h3>' + (f'<p class="intro">{html.escape(lst["intro"])}</p>' if lst.get("intro") else ""))
@@ -223,6 +228,14 @@ for sec in data["sections"]:
         parts.append('</div>')
     parts.append('</div>')
   parts.append('</section>')
+
+for sec in data["sections"]:
+    if sec["slug"] == _lead:
+        render_section(sec)
+parts.extend(start_parts)
+for sec in data["sections"]:
+    if sec["slug"] != _lead:
+        render_section(sec)
 
 parts.append(f"""</main>
 <footer>No prices on purpose: Amazon's change daily. Photos are my own house. {html.escape(s['disclosure'].split('.')[0])}.</footer>
