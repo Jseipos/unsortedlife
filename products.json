@@ -1050,7 +1050,7 @@
      "wishlist": true,
      "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3NRAT6JHGF96U?tag=unsortedlif08-20",
      "limit": 6,
-     "cover": "kid gift guide_a.png"
+     "cover": "Kid gift guide.PNG"
     },
     {
      "slug": "mom-list",
@@ -1211,7 +1211,7 @@
       }
      ],
      "limit": 6,
-     "cover": "mom gift guide_a.png"
+     "cover": "mom gift guide.PNG"
     },
     {
      "slug": "dad-list",
