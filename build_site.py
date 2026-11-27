@@ -88,24 +88,24 @@ parts.append(f"""<!doctype html>
 <meta name="p:domain_verify" content="be38e078cec140b060eb7cad3dee5145"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{{--bg:#fbf4ee;--bg2:#f6e7df;--ink:#3a2e2a;--muted:#8a7470;--card:#fffaf6;--line:#ecd9d0;--accent:#c76c84;--accent-2:#9fb49a;--accent-ink:#ffffff;--shadow:0 6px 18px rgba(120,70,80,.10)}}
-@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{--bg:#221a1b;--bg2:#2c2123;--ink:#f3e9e6;--muted:#b89da0;--card:#2b2124;--line:#4a373b;--accent:#e58aa3;--accent-2:#8fae8c;--accent-ink:#2a1a1f;--shadow:0 6px 18px rgba(0,0,0,.35)}}}}
-:root[data-theme="dark"]{{--bg:#221a1b;--bg2:#2c2123;--ink:#f3e9e6;--muted:#b89da0;--card:#2b2124;--line:#4a373b;--accent:#e58aa3;--accent-2:#8fae8c;--accent-ink:#2a1a1f;--shadow:0 6px 18px rgba(0,0,0,.35)}}
+:root{{--bg:#f4ebdd;--bg2:#e6eadb;--ink:#5a5147;--muted:#6e655b;--card:#fbf6ee;--line:#e3d6c3;--accent:#278e8c;--accent-deep:#1f7472;--accent-2:#a9b99b;--blush:#d9a6a0;--accent-ink:#ffffff;--shadow:0 6px 18px rgba(90,81,71,.10)}}
+@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{--bg:#2a2622;--bg2:#333a30;--ink:#f4ebdd;--muted:#c9bdae;--card:#34302b;--line:#4a443d;--accent:#5fbdba;--accent-deep:#5fbdba;--accent-2:#a9b99b;--blush:#d9a6a0;--accent-ink:#1e1b18;--shadow:0 6px 18px rgba(0,0,0,.35)}}}}
+:root[data-theme="dark"]{{--bg:#2a2622;--bg2:#333a30;--ink:#f4ebdd;--muted:#c9bdae;--card:#34302b;--line:#4a443d;--accent:#5fbdba;--accent-deep:#5fbdba;--accent-2:#a9b99b;--blush:#d9a6a0;--accent-ink:#1e1b18;--shadow:0 6px 18px rgba(0,0,0,.35)}}
 *{{box-sizing:border-box}}
 body{{margin:0;background:var(--bg);background-image:radial-gradient(circle at 20% 0%,var(--bg2),transparent 55%),radial-gradient(circle at 100% 30%,var(--bg2),transparent 40%);color:var(--ink);font:16px/1.55 "Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}}
 header{{padding:34px 16px 14px;max-width:720px;margin:0 auto;text-align:center}}
 h1{{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:38px;margin:0 0 6px;letter-spacing:-.01em;color:var(--accent)}}
-h1::after{{content:"";display:block;width:84px;height:3px;margin:12px auto 0;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}}
+h1::after{{content:"";display:block;width:84px;height:3px;margin:12px auto 0;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--blush))}}
 .tag{{color:var(--muted);margin:0 0 16px;font-size:17px}}
 .social{{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 16px}}
 .social a{{border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;background:var(--card);box-shadow:var(--shadow)}}
-.social a:hover{{border-color:var(--accent);color:var(--accent)}}
+.social a:hover{{border-color:var(--accent-deep);color:var(--accent-deep)}}
 .disc{{font-size:13px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:10px 14px;margin:0;text-align:left}}
 nav{{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}}
 nav .tabs{{max-width:720px;margin:0 auto;padding:8px 16px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}}
 nav a{{white-space:nowrap;font-size:15px;font-weight:700;color:var(--muted);text-decoration:none;padding:8px 16px;border-radius:999px;border:1.5px solid transparent}}
-nav a:hover{{color:var(--accent)}}
-nav a.active{{color:var(--accent);border-color:var(--accent);background:var(--card)}}
+nav a:hover{{color:var(--accent-deep)}}
+nav a.active{{color:var(--accent-deep);border-color:var(--accent-deep);background:var(--card)}}
 section,.card,.row{{scroll-margin-top:72px}}
 .start h2::before{{content:"\u2740"}}
 .grid.start-grid{{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
@@ -115,7 +115,7 @@ main{{max-width:720px;margin:0 auto;padding:8px 16px 48px}}
 section{{margin:30px 0}}
 h2{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:28px;margin:0 0 2px;padding-top:14px;text-align:center}}
 h2::before{{content:"❦";display:block;color:var(--accent-2);font-size:20px;margin-bottom:2px}}
-h3{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-style:italic;font-size:20px;margin:22px 0 2px;color:var(--accent)}}
+h3{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-style:italic;font-size:20px;margin:22px 0 2px;color:var(--accent-deep)}}
 .intro{{color:var(--muted);margin:0 0 12px}}
 .sec-intro{{color:var(--muted);margin:0 0 4px;text-align:center}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}}
@@ -124,13 +124,13 @@ h3{{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-style:ital
 .body{{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}}
 .name{{font-weight:700;line-height:1.3}}
 .note{{font-size:14px;color:var(--muted);flex:1}}
-.btn{{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;border-radius:999px;padding:9px 14px;font-size:14px;font-weight:700;text-align:center;box-shadow:0 3px 10px rgba(199,108,132,.28)}}
+.btn{{display:inline-block;background:var(--accent-deep);color:var(--accent-ink);text-decoration:none;border-radius:999px;padding:9px 14px;font-size:14px;font-weight:700;text-align:center;box-shadow:0 3px 10px rgba(39,142,140,.25)}}
 .btn:hover{{filter:brightness(1.07)}}
 .tile{{aspect-ratio:4/3;background:linear-gradient(135deg,var(--bg2),var(--card));border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:14px;text-align:center}}
 .tile span{{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:22px;color:var(--accent);line-height:1.2}}
 .listbtn{{margin:0 0 14px}}
 .cover{{width:100%;max-width:520px;display:block;margin:0 auto 14px;border-radius:18px;box-shadow:var(--shadow)}}
-.btn.alt{{background:var(--accent-2);box-shadow:0 3px 10px rgba(159,180,154,.35)}}
+.btn.alt{{background:var(--card);color:var(--accent-deep);box-shadow:inset 0 0 0 1.5px var(--accent-deep)}}
 .group .body{{gap:10px}}
 .row{{display:flex;flex-direction:column;gap:4px}}
 .card.group{{grid-column:1 / -1}}

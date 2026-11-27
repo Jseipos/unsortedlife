@@ -1,7 +1,7 @@
 {
  "site": {
   "title": "The Unsorted Life",
-  "tagline": "Single mom, veteran, probably autistic. My house is a mess and I'm finally doing something about it. Real products, real chaos, no performance.",
+  "tagline": "Single mom, veteran, AuDHD. Building a life that feels like mine, no matter how imperfect it gets. Real products, real chaos, no performance.",
   "disclosure": "As an Amazon Associate I earn from qualifying purchases. Every link below is an Amazon affiliate link. Everything here is something I own and use, and I say so when it didn't work.",
   "links": [
    {
@@ -1050,7 +1050,7 @@
      "wishlist": true,
      "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3NRAT6JHGF96U?tag=unsortedlif08-20",
      "limit": 6,
-     "cover": "ayla gift guide_a.png"
+     "cover": "kid gift guide_a.png"
     },
     {
      "slug": "mom-list",
@@ -1219,7 +1219,7 @@
      "intro": "A gift guide, not a review. He says he needs nothing. He is wrong.",
      "wishlist": true,
      "limit": 6,
-     "cover": "dad gift guide_a.png",
+     "cover": "Dad gift guide_a.PNG",
      "amazon_list": "https://www.amazon.com/hz/wishlist/ls/3OJ7BZ63DBP5Z?tag=unsortedlif08-20",
      "items": [
       {
