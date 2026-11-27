@@ -723,66 +723,6 @@
    "intro": "Wishes, not reviews. Only things I'd actually buy.",
    "lists": [
     {
-     "slug": "my-list",
-     "title": "What's on my Christmas list",
-     "intro": "",
-     "items": [
-      {
-       "name": "Umite Chef 21-piece nonstick pots and pans",
-       "short": "Pots and pans",
-       "note": "Mine are scratched past saving. A full set, start over.",
-       "url": "https://www.amazon.com/dp/B0GH6JW6L7?tag=unsortedlif08-20",
-       "photo": "",
-       "match": [
-        "pots and pans"
-       ]
-      },
-      {
-       "name": "Dreame A3 AWD robot lawn mower",
-       "short": "Robot mower",
-       "note": "The dream. One less Saturday chore in Florida heat.",
-       "url": "https://www.amazon.com/dp/B0H8XCG1CJ?tag=unsortedlif08-20",
-       "photo": "",
-       "match": [
-        "robot mower"
-       ]
-      },
-      {
-       "name": "TAO Clean sonic toothbrush with UV cleaning station",
-       "short": "Sonic toothbrush",
-       "note": "The base cleans the brush head. Less counter clutter, less gross.",
-       "url": "https://www.amazon.com/dp/B0DXDHRPKS?tag=unsortedlif08-20",
-       "photo": "",
-       "match": [
-        "sonic toothbrush"
-       ]
-      },
-      {
-       "name": "Sleek Socket flat plug extension",
-       "short": "Flat plug extension",
-       "note": "Lets furniture sit flush against the wall. Tiny thing, big difference.",
-       "url": "https://www.amazon.com/dp/B07S8DZ1T5?tag=unsortedlif08-20",
-       "photo": "",
-       "match": [
-        "flat plug extension"
-       ]
-      },
-      {
-       "name": "Grüns superfood gummies for kids",
-       "short": "Grüns kids gummies",
-       "note": "On my list because I am the one who buys the vitamins she will actually eat.",
-       "url": "https://www.amazon.com/dp/B0DCPSNCQG?tag=unsortedlif08-20",
-       "photo": "",
-       "match": [
-        "grüns kids gummies"
-       ]
-      }
-     ],
-     "wishlist": true,
-     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/2LGSMI851HUT2?tag=unsortedlif08-20",
-     "limit": 6
-    },
-    {
      "slug": "her-list",
      "title": "What's on my 7 year old's list",
      "intro": "",
@@ -1284,6 +1224,66 @@
        ]
       }
      ]
+    },
+    {
+     "slug": "my-list",
+     "title": "What's on my Christmas list",
+     "intro": "",
+     "items": [
+      {
+       "name": "Umite Chef 21-piece nonstick pots and pans",
+       "short": "Pots and pans",
+       "note": "Mine are scratched past saving. A full set, start over.",
+       "url": "https://www.amazon.com/dp/B0GH6JW6L7?tag=unsortedlif08-20",
+       "photo": "",
+       "match": [
+        "pots and pans"
+       ]
+      },
+      {
+       "name": "Dreame A3 AWD robot lawn mower",
+       "short": "Robot mower",
+       "note": "The dream. One less Saturday chore in Florida heat.",
+       "url": "https://www.amazon.com/dp/B0H8XCG1CJ?tag=unsortedlif08-20",
+       "photo": "",
+       "match": [
+        "robot mower"
+       ]
+      },
+      {
+       "name": "TAO Clean sonic toothbrush with UV cleaning station",
+       "short": "Sonic toothbrush",
+       "note": "The base cleans the brush head. Less counter clutter, less gross.",
+       "url": "https://www.amazon.com/dp/B0DXDHRPKS?tag=unsortedlif08-20",
+       "photo": "",
+       "match": [
+        "sonic toothbrush"
+       ]
+      },
+      {
+       "name": "Sleek Socket flat plug extension",
+       "short": "Flat plug extension",
+       "note": "Lets furniture sit flush against the wall. Tiny thing, big difference.",
+       "url": "https://www.amazon.com/dp/B07S8DZ1T5?tag=unsortedlif08-20",
+       "photo": "",
+       "match": [
+        "flat plug extension"
+       ]
+      },
+      {
+       "name": "Grüns superfood gummies for kids",
+       "short": "Grüns kids gummies",
+       "note": "On my list because I am the one who buys the vitamins she will actually eat.",
+       "url": "https://www.amazon.com/dp/B0DCPSNCQG?tag=unsortedlif08-20",
+       "photo": "",
+       "match": [
+        "grüns kids gummies"
+       ]
+      }
+     ],
+     "wishlist": true,
+     "amazon_list": "https://www.amazon.com/hz/wishlist/ls/2LGSMI851HUT2?tag=unsortedlif08-20",
+     "limit": 6
     }
    ]
   }
